@@ -5,7 +5,7 @@ Bundler.require
 class ApplicationController < Sinatra::Base
  
   get '/' do 
-    erb :index, locals:{gossip: Gossip.all}
+    erb :index, locals:{gossips: Gossip.all}
   end
 
   get '/gossips/new/' do 
